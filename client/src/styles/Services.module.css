@@ -1,0 +1,72 @@
+.section {
+    margin-top: 8em;
+}
+
+.RenderList {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-transform: capitalize;
+    gap: 40px 100px;
+    margin-top: 5em;
+}
+
+.PriceList {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #dedede;
+}
+
+.PriceTitle {
+    font-family: DM Sans, sans-serif, Arial;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.description {
+    font-family: DM Sans, sans-serif, Arial;
+    color: #666666;
+    font-size: 16px;
+}
+
+.price {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-family: DM Sans, sans-serif, Arial;
+    color: #ad9a7c;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+    .RenderList {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .PriceList {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .PriceTitle {
+        font-size: 21.5px;
+    }
+    .price {
+        font-size: 18px;
+    }
+    .RenderList {
+        gap: 30px;
+    }
+}

@@ -1,0 +1,89 @@
+.overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup {
+    background-color: white;
+    display: inline-block;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 350px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    transition: 2s;
+}
+
+.login {
+    top: 10%;
+}
+
+.title {
+    text-align: center;
+    font-family: Red Hat text, Impact, Haettenschweiler, "Arial Narrow Bold",
+        sans-serif;
+    font-size: 28px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    display: block;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 28px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 600;
+}
+
+.form input {
+    border-width: 0px 0px 1px;
+    outline: none;
+    padding: 10px 0px 10px 0px;
+    font-size: 15px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.inputError {
+    border-bottom-color: red;
+}
+
+.submitButton {
+    display: block;
+    margin-top: 40px;
+    background-color: #20c997;
+    font-family: Red Hat text, Impact, Haettenschweiler, "Arial Narrow Bold",
+        sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width: 500px) {
+    .popup {
+        width: 230px;
+        padding: 20px 25px;
+    }
+    .submitButton {
+        font-size: 18px;
+        padding: 8px 0px 8px 0px;
+    }
+}

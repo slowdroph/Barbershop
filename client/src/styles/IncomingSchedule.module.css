@@ -1,0 +1,187 @@
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8em;
+}
+
+.scheduleBox {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content;
+    justify-content: center;
+    width: 1200px;
+    height: 700px;
+    padding: 40px 0px 40px 0px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 5em;
+    overflow-y: scroll;
+    background-color: #c6cbcf;
+}
+
+.scheduleBox::-webkit-scrollbar {
+    width: 20px;
+    background-color: white;
+    border-radius: 6px;
+    border-color: #20c997;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.scheduleBox::-webkit-scrollbar-button {
+    display: none;
+}
+
+.scheduleBox::-webkit-scrollbar-thumb {
+    background-color: #20c997;
+    color: black;
+    border-radius: 6px;
+}
+
+.scheduleBox::-webkit-scrollbar-track {
+    background-color: white;
+    border-color: #20c997;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+}
+
+.scheduleList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.upcomingInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: fit-content;
+}
+
+.dataInfo {
+    width: 220px;
+    font-family: DM Sans, sans-serif, Arial;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+}
+
+.userList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 800px;
+    height: 70px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.userName {
+    font-family: DM Sans, sans-serif, Arial;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #20c997;
+    width: 220px;
+}
+
+.date {
+    font-family: DM Sans, sans-serif, Arial;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    width: 220px;
+}
+
+.service {
+    font-family: DM Sans, sans-serif, Arial;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ad9a7c;
+    width: 220px;
+}
+
+.noData {
+    color: white;
+    font-family: DM Sans, sans-serif, Arial;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 1250px) {
+    .scheduleBox {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .userList {
+        flex-direction: column;
+        gap: 8px;
+        height: fit-content;
+        padding: 20px 0px;
+        width: 500px;
+    }
+
+    .scheduleBox {
+        max-width: 700px;
+    }
+
+    .upcomingInfo {
+        width: 100%;
+    }
+
+    .scheduleList {
+        align-items: center;
+    }
+
+    .dataInfo:nth-child(2) {
+        display: none;
+    }
+
+    .dataInfo:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .scheduleBox {
+        max-width: 400px;
+    }
+    .userList {
+        width: 240px;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .scheduleBox {
+        max-width: 300px;
+    }
+    .userList {
+        gap: 4px;
+        height: fit-content;
+        padding: 0px 0px;
+    }
+    .userName {
+        font-size: 20px;
+    }
+    .date,
+    .service {
+        font-size: 16px;
+    }
+}

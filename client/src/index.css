@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("assets/fonts/DMSans-VariableFont_opsz,wght.ttf")
+        format("truetype");
+}
+
+@font-face {
+    font-family: "Red Hat text";
+    src: url("assets/fonts/RedHatText-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: sans-serif, "Trebuchet MS", "Lucida Sans Unicode",
+        "Lucida Grande", "Lucida Sans", Arial;
+    font-size: 2.8em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+::selection {
+    color: #ffffff;
+    background: #5dc9a5;
+}
+
+.visibleSection {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 0.8s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.hiddenSection {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:768px) {
+    h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    h2 {
+        font-size: 30px;
+    }
+}

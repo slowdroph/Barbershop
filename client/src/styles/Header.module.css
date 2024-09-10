@@ -1,0 +1,92 @@
+.header {
+    position: relative;
+    height: 110vh;
+    background-image: url(/images/salao-back1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.356);
+    animation-name: change;
+    animation-timing-function: ease-in-out;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change {
+    0% {
+        background-image: url(/images/salao-back1.jpg);
+    }
+    25% {
+        background-image: url(/images/salao-back2.jpg);
+    }
+    50% {
+        background-image: url(/images/salao-back3.jpg);
+    }
+    75% {
+        background-image: url(/images/salao-back4.jpg);
+    }
+    100% {
+        background-image: url(/images/salao-back.jpg);
+    }
+}
+
+.headingContainer {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+
+.heading {
+    font-family: sans-serif, "Trebuchet MS", "Lucida Sans Unicode",
+        "Lucida Grande", "Lucida Sans", Arial;
+    color: white;
+    font-size: 5em;
+    animation-name: moveinright;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveinright {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 1.5em;
+    }
+
+    .headingContainer {
+        top: 60%;
+    }
+}

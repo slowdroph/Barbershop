@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.UnorderedList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.userName {
+    color: #20c997;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.closeMarker {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.closeMarker:focus {
+    transform: scale(1.3);
+}
+
+.closeMarker i {
+    color: black;
+    font-size: 34px;
+}
+
+.list a {
+    text-decoration: none;
+    color: #c6cbcf;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 10px;
+    margin-top: 20px;
+}
+
+.styledBtn button {
+    background-color: #20c997;
+    display: block;
+    background-color: #20c997;
+    font-family: Red Hat text, Impact, Haettenschweiler, "Arial Narrow Bold",
+        sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+    width: 150px;
+}

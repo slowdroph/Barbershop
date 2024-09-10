@@ -1,0 +1,113 @@
+.section {
+    height: 900px;
+    margin-top: 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-image: linear-gradient(to bottom, #c6cbcf, #ad9a7c);
+}
+
+.leafletContainer {
+    height: 500px;
+    width: 40vw;
+}
+
+.container {
+    background-color: white;
+    display: inline-block;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 350px;
+    height: fit-content;
+}
+
+.container p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.container h2 {
+    font-family: sans-serif, "Trebuchet MS", "Lucida Sans Unicode",
+        "Lucida Grande", "Lucida Sans", Arial;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: left;
+    text-transform: capitalize;
+    padding: 28px 0px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: rgb(224, 229, 235);
+    border: none;
+
+    font-size: 18px;
+}
+
+.form textarea {
+    font-family: Red Hat text, Impact, Haettenschweiler, "Arial Narrow Bold";
+    font-size: 16px;
+}
+
+.submitButton {
+    display: block;
+    margin-top: 30px;
+    background-color: #20c997;
+    font-family: Red Hat text, Impact, Haettenschweiler, "Arial Narrow Bold",
+        sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width: 850px) {
+    .section {
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        padding-top: 30px;
+    }
+    .leafletContainer {
+        height: 300px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container h2 {
+        font-size: 28px;
+    }
+    .container p {
+        font-size: 16px;
+    }
+    .form input {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 250px;
+    }
+    .submitButton {
+        font-size: 18px;
+        padding: 8px 0px 8px 0px;
+    }
+}

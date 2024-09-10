@@ -1,0 +1,61 @@
+.deletePage {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    gap: 30px;
+}
+
+.deletePage h2 {
+    font-family: sans-serif, "Trebuchet MS", "Lucida Sans Unicode",
+        "Lucida Grande", "Lucida Sans", Arial;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.deletePage p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.deletePage button {
+    display: block;
+    width: 200px;
+    background-color: rgb(247, 244, 244);
+    font-family: Red Hat text, Impact, Haettenschweiler, "Arial Narrow Bold",
+        sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: red;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width: 625px) {
+    .deletePage h2 {
+        font-size: 24px;
+    }
+    .deletePage p {
+        font-size: 16px;
+    }
+    .deletePage button {
+        padding: 8px 0px 8px 0px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .deletePage {
+        margin-top: 20px;
+        padding: 0px 2px;
+    }
+}

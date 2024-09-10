@@ -1,0 +1,40 @@
+.message {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Red Hat text, Impact, Haettenschweiler, "Arial Narrow Bold",
+        sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    animation-name: Message;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.success {
+    background-color: #20c997;
+    color: white;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+@keyframes Message {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    49% {
+        transform: translateY(40px);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
