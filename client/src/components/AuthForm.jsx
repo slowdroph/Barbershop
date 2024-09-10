@@ -23,8 +23,8 @@ function AuthForm({ setHiddenPopUp, isLogin, onLogin }) {
         e.preventDefault();
         try {
             const url = isLogin
-                ? "https://barbearia-server.vercel.app/api/v1/users/login"
-                : "https://barbearia-server.vercel.app/api/v1/users/signup";
+                ? "https://barbershop-server-ebon.vercel.app/api/v1/users/login"
+                : "https:https://barbershop-server-ebon.vercel.app/api/v1/users/signup";
             const data = isLogin
                 ? {
                       email: formData.email,
