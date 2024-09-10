@@ -24,7 +24,7 @@
 }
 
 .login {
-    top: 10%;
+    top: 18%;
 }
 
 .title {
@@ -85,5 +85,8 @@
     .submitButton {
         font-size: 18px;
         padding: 8px 0px 8px 0px;
+    }
+    .login {
+        top: 10%;
     }
 }
