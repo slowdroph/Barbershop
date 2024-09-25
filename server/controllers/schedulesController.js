@@ -119,3 +119,26 @@ export const deleteSchedule = async (req, res) => {
         });
     }
 };
+
+export const handler = async (req, res) => {
+    try {
+        const now = new Date();
+        const schedules = await Schedule.find({ scheduledDate: { $lte: now } });
+
+        for (const schedule of schedules) {
+            await Schedule.findByIdAndDelete(schedule._id);
+            await User.findByIdAndUpdate(schedule.user, {
+                $pull: { schedules: schedule._id },
+            });
+
+            console.log(`Agendamento ${schedule._id} removido.`);
+        }
+
+        return res
+            .status(200)
+            .json({ message: "Expired schedules cleaned up." });
+    } catch (err) {
+        console.error(err);
+        return res.status(500).json({ error: "Failed to clean up schedules." });
+    }
+};

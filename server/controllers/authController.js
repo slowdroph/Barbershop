@@ -151,3 +151,4 @@ export async function protect(req, res, next) {
     req.user = currentUser;
     next();
 }
+
