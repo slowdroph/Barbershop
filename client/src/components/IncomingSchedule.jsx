@@ -45,7 +45,12 @@ function IncomingSchedule() {
                                     {schedule.user.name}
                                 </h3>
                                 <span className={styles.date}>
-                                    {new Date(schedule.scheduledDate)
+                                    {new Date(
+                                        new Date(
+                                            schedule.scheduledDate
+                                        ).getTime() +
+                                            3 * 60 * 60 * 1000
+                                    )
                                         .toLocaleString()
                                         .split(",")
                                         .join(" - ")}
