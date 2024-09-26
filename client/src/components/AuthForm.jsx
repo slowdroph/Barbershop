@@ -24,7 +24,7 @@ function AuthForm({ setHiddenPopUp, isLogin, onLogin }) {
         try {
             const url = isLogin
                 ? "https://barbershop-server-ebon.vercel.app/api/v1/users/login"
-                : "https:https://barbershop-server-ebon.vercel.app/api/v1/users/signup";
+                : "https://barbershop-server-ebon.vercel.app/api/v1/users/signup";
             const data = isLogin
                 ? {
                       email: formData.email,
