@@ -4,7 +4,17 @@ import "leaflet/dist/leaflet.css";
 import { useEffect, useRef, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import useVisibilityChange from "../useVisibilityChange";
+import L from "leaflet";
 import Message from "./Message";
+
+const customMarkerIcon = new L.Icon({
+    iconUrl: "/images/marker-icon.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowUrl: "/images/marker-shadow.png",
+    shadowSize: [41, 41],
+});
 
 function Map() {
     const [isVisible, setIsVisible] = useState(false);
@@ -86,7 +96,10 @@ function Map() {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[-23.74716, -46.472727]}>
+                <Marker
+                    position={[-23.74716, -46.472727]}
+                    icon={customMarkerIcon}
+                >
                     <Popup>
                         <h3>Barbearia Elegance</h3>
                     </Popup>
