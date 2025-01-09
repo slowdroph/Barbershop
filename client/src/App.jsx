@@ -1,10 +1,12 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import SchedulingPage from "./pages/SchedulingPage";
-import HomePage from "./pages/HomePage";
+import { lazy } from "react";
 import ProtectedRoute from "./ProtectedRoute";
-import RemoveSchedulePage from "./pages/RemoveSchedulePage";
-import AppLayout from "./pages/AppLayout";
-import DeleteAccountPage from "./pages/DeleteAccountPage";
+
+const HomePage = lazy(() => import("./pages/HomePage"));
+const SchedulingPage = lazy(() => import("./pages/SchedulingPage"));
+const RemoveSchedulePage = lazy(() => import("./pages/RemoveSchedulePage"));
+const AppLayout = lazy(() => import("./pages/AppLayout"));
+const DeleteAccountPage = lazy(() => import("./pages/DeleteAccountPage"));
 
 function App() {
     return (
