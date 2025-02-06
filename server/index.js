@@ -3,7 +3,7 @@ dotenv.config();
 import mongoose from "mongoose";
 import app from "./app.js";
 
-mongoose.connect(process.env.MONGODB_CONNECT_URI).then(() => {
+mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
     console.log("DB connection successful!");
 });
 

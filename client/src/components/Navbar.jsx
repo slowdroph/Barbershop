@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import styles from "./../styles/Navbar.module.css";
 import AuthForm from "./AuthForm";
-import useVisibilityChange from "../useVisibilityChange";
+import useVisibilityChange from "../hooks/useVisibilityChange";
 import { FaBars } from "react-icons/fa";
 import HiddenMenu from "./HiddenMenu";
 

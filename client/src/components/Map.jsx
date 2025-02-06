@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import "leaflet/dist/leaflet.css";
 import { useEffect, useRef, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import useVisibilityChange from "../useVisibilityChange";
+import useVisibilityChange from "../hooks/useVisibilityChange";
 import L from "leaflet";
 import Message from "./Message";
 

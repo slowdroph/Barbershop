@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./../styles/IncomingSchedule.module.css";
-import useVisibilityChange from "../useVisibilityChange";
-import api from "./../api.jsx";
+import useVisibilityChange from "../hooks/useVisibilityChange.jsx";
+import api from "./../utils/api.jsx";
 
 function IncomingSchedule() {
     const [schedules, setSchedules] = useState([]);

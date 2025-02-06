@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./../styles/About.module.css";
-import useVisibilityChange from "../useVisibilityChange";
+import useVisibilityChange from "../hooks/useVisibilityChange.jsx";
 
 function About() {
     const [isVisible, setIsVisible] = useState(false);

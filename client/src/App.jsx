@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { lazy } from "react";
-import ProtectedRoute from "./ProtectedRoute";
+import ProtectedRoute from "./utils/ProtectedRoute";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const SchedulingPage = lazy(() => import("./pages/SchedulingPage"));

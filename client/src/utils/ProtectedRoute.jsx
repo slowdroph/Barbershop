@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import AuthForm from "./components/AuthForm";
+import AuthForm from "../components/AuthForm";
 
 function ProtectedRoute({ element: Component, ...rest }) {
     const [user, setUser] = useState(() => {

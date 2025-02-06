@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./../styles/Services.module.css";
-import api from "./../api.jsx";
-import useVisibilityChange from "../useVisibilityChange.jsx";
+import api from "./../utils/api.jsx";
+import useVisibilityChange from "../hooks/useVisibilityChange";
 
 function Services() {
     const [servicesData, setServicesData] = useState([]);

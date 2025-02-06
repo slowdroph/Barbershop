@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import api from "./../api.jsx";
+import api from "./../utils/api.jsx";
 import styles from "./../styles/RemoveSchedulePage.module.css";
 
 function RemoveSchedulePage() {
